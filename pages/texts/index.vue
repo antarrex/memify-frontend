@@ -1,24 +1,24 @@
 <template>
   <div>
     <Header></Header>
-    <MemeList></MemeList>
+    <TextmemList></TextmemList>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header';
-import MemeList from '~/components/MemeList';
+import TextmemList from '~/components/TextmemList';
 import axios from 'axios';
 
 export default {
   components: {
     Header,
-    MemeList,
+    TextmemList,
   },
   fetch ({ store }) {
-    return axios.get(`http://www.memify.ru/api/v1/mems/?page=1&page_size=20`)
+    return axios.get(`http://www.memify.ru/api/v1/textmems/?page=1&page_size=20`)
       .then((res) => {
-        store.dispatch('setMemes', res.data.results);
+        store.dispatch('setTextmems', res.data.results);
       })
   }
 }

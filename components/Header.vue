@@ -4,15 +4,21 @@
       <div class="header item">
         Memify
       </div>
-      <a class="item">
-        Мемы
-      </a>
-      <a class="item">
-        Новостянка
-      </a>
-      <a class="item">
-        Буквы
-      </a>
+      <nuxt-link to="/">
+        <a class="item">
+          Мемы
+        </a>
+      </nuxt-link>
+      <nuxt-link to="/news">
+        <a class="item">
+          Новостянка
+        </a>
+      </nuxt-link>
+      <nuxt-link to="/texts">
+        <a class="item">
+          Буквы
+        </a>
+      </nuxt-link>
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="ui card">
-    <div class="content">
+    <div v-if="text" class="content">
       <div class="meme-text" :class="{expanded: expanded}">
         {{text}}
       </div>
