@@ -1,0 +1,24 @@
+{
+  "name": "memify-nuxt",
+  "version": "1.0.0",
+  "description": "My incredible Nuxt.js project",
+  "author": "maxim-larkin",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.4.0",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-no-ssr": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
